@@ -1,0 +1,104 @@
+.sub-level {
+    background: #ccc;
+}
+
+tr {
+    background-color: #fff;
+}
+
+.alt {
+    background-color: #ccc;
+}
+
+.highlight {
+    background-color: red;
+}
+
+a.external {
+    background: #fff url() no-repeat 100% 2px;
+    padding-right: 15px;
+}
+
+.switcher {
+}
+
+.large {
+    font-size: 24px;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+.hover {
+    cursor: pointer;
+    background-color: #afa;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#guideTree {
+    padding: 3px;
+    margin: auto;
+}
+
+#guideTree_left {
+    height: inherit;
+    width: 27%;
+    float: left;
+    background-color: aliceblue;
+}
+
+#guideTree_right {
+    height: inherit;
+    width: 72%;
+    float: right;
+    background-color: aliceblue;
+}
+a:hover {
+
+}
+
+
+.indicatorName {
+    font-family: STFangsong;
+    font-size: 14px;
+}
+
+.indicatorAbout {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: STFangsong;
+}
+
+.indicatorAbout_header {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: KaiTi;
+}
+#triangle-right {
+    float:left;
+    width: 0px;
+    height: 0px;
+    border-top: 6px solid transparent;
+    border-left: 10px solid blue;
+    border-bottom: 6px solid transparent;
+}
+.triangle-indicators {
+    float:left;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-left: 7px solid blue;
+    border-bottom: 4px solid transparent;
+}
+
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+}

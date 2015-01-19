@@ -1,0 +1,157 @@
+﻿body {
+	background-color: #ECECEC;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	top: 0px;
+	background-color: white;
+	margin: 0 auto;
+	width: 1000px;
+	padding: 10px 10px 10px 10px;
+}
+
+#top_bar {
+	position: fixed;
+	margin: 10px;
+	height: 30px;
+	width: inherit;
+	margin: 0 auto;
+	top: 0px;
+	background-color: #184785;
+	color: whitesmoke;
+}
+
+#top_link {
+	margin-right: 20px;
+	color: whitesmoke;
+}
+
+#top_link a {
+	color: whitesmoke;
+	margin-right: 20px;
+}
+
+#header {
+	line-height: 200px;
+	font-size: 24px;
+	font-family: 黑体;
+	height: 200px;
+	background-image: url("../images/food-header.jpg");
+	background-color: #1B4F93;
+	width: 1000px;
+}
+
+#globalnav {
+	font-size: 14px;
+	background-color: #205AA7;
+	color: whitesmoke;
+}
+
+#globalnav a {
+	color: whitesmoke;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+.divFrame {
+	width: 260px;
+	height: auto;
+	border: solid 1px #666;
+	font: 10pt;
+}
+
+.divTitle {
+	background-color: #eee;
+	padding: 5px;
+}
+
+.divContent {
+	padding: 5px;
+}
+
+#gotop {
+	position: fixed;
+	border-radius: 10px 10px;
+	margin-right: 20px;
+	right: 20px;
+	top: 500px;
+	float: right;
+	font-family: Monaco;
+	font-size: 12px;
+	width: 25px;
+	height: 25px;
+	background-color: gray;
+	padding: 20px;
+	word-wrap: break-word;
+	word-break: normal;
+	color: whitesmoke;
+}
+
+a {
+	text-decoration: none;
+}
+
+#gotop a:hover {
+	color: #184785;
+}
+
+.divCurrColor {
+	background-color: red;
+}
+
+.divTip {
+	width: 244px;
+	border: solid 1px #666;
+	padding: 8px;
+	font-size: 9pt;
+	margin-top: 5px;
+}
+
+.txtCss {
+	border: solid 1px #ccc;
+}
+
+.divBtn {
+	padding-top: 5px;
+}
+
+.divBtn .btnCss {
+	border: solid 1px #535353;
+	width: 60px;
+}
+
+#footer {
+	margin-top: 10px;
+	background-color: #205AA7;
+	color: whitesmoke;
+	height: 200px;
+    clear:both;
+}
+
+#footer ul {
+	list-style-type: none;
+	float: left;
+	font-family: Monaco;
+	font-size: 14px;
+	margin-left: 2%;
+}
+
+#footer a {
+	color: whitesmoke;
+}
+
+#copyright {
+	font-size: 14px;
+	float: left;
+}
+
+#loading {
+	background-image: url("../images/food-header.jpg");
+}
+
+#show_data img {
+	text-align: center;
+	padding-top: 50px;
+}

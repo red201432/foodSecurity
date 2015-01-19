@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<indicators>
+	<suit name="factors" id="影响因素">
+		<dimension name="availability" id="粮食供应充足">
+			<indicator name="Average Dietary Energy Supply Adequacy" about="膳食能量供应作为全国的平均膳食能量要求（ADER）的百分比。大于100则能量供应充足，小于100则能量供应不充足。帮助了解营养不良是否是由于粮食供应不足而产生。" unit="(Percentage)">平均膳食能量供应充足度</indicator>
+			<indicator name="Average Value of Food Production" about="年度食品生产（FAO估计）总价值，以人均多少美元表示。不同国家粮食生产的经济规模可以参照此参数进行比较。" unit="(I$ per caput)">食品生产的平均值</indicator>
+			<indicator name="Share of Dietary Energy Supply Derived from Cereals, Roots and Tubers" about="由谷物块、根和块茎提供的能量与总膳食能量供应的比值" unit="(percent)">应来自谷物、根和块茎膳食能量供应</indicator>
+			<indicator name="Average Protein Supply" about="平均蛋白质供给（克/人/天）" unit="(gr/caput/day)">平均蛋白质供应</indicator>
+			<indicator name="Average supply of protein of animal origin" about="动物来源的蛋白质的平均供应" unit="(gr/caput/day)">动物蛋白质平均供应</indicator>
+		</dimension>
+		<dimension name="access" id="粮食易获取性">
+			<indicator name="Percent of Paved Roads over Total Roads" about="交通基础设施来源：世界银行，交通运输部）
+铺设道路占总道路的百分比,衡量交通质量的一个指标" unit="(percent of total roads)">铺面道路在道路总量中所占比例</indicator>
+			<indicator name="Road Density" about="每100平方公里有多少公里公路" unit="(per 100 square km of land area)">公路密度</indicator>
+			<indicator name="Rail lines Density" about="每100平方公里铁路线的路线总长度" unit="(per 100 square km of land area)">铁路密度</indicator>
+			<indicator name="Domestic Food Price Level Index" about="不同国家不同时间的国内食品价格指数的变化" unit="(index)">国内的食品价格指数</indicator>
+		</dimension>
+		<dimension name="stability" id="粮食供应稳定性">
+			<indicator name="Percent of Arable Land Equipped for Irrigation" about="带有灌溉设施的耕地所占比例，衡量干旱的潜在影响。" unit="(Percentage)">带有灌溉设施的耕地所占比例
+</indicator>
+			<indicator name="Value of Food Imports in Total Merchandise Exports" about="粮食进口值与商品总出口值之间的比值。这个指标暴露出国家受国际中的贸易条件的改变的影响大小。" unit="(Percentage)">粮食进口值与商品总出口值之间的比值</indicator>
+			<indicator name="Cereal Import Dependency Ratio" about="用来衡量一个国家的粮食自给能力和受国际贸易市场潜在冲击力的影响" unit="(Percentage)">谷物进口依赖率</indicator>
+			<indicator name="Index of Political Stability and Absence of Violence" about="由违宪或者暴力冲突包括政治动机的暴力和恐怖主义引起的政治不稳定或者政府倒台的可能性" unit="(index)">政治稳定和无暴力冲突指数</indicator>
+			<indicator name="Per Capita Food Production Variability" about="净粮食产值的变化" unit="(constant 2004-2006 Int$ per capita)">人均粮食产量波动性</indicator>
+			<indicator name="Per Capita Food Supply Variability" about="粮食供应的变化" unit="(kcal/caput/day)">人均粮食供应量波动性</indicator>
+			<indicator name="Domestic Food Price Volatility Index" about="不同国家和时间的国内食品价格指数波动率" unit="(index)">国内粮食价格波动性</indicator>
+		</dimension>
+		<dimension name="utilization" id="粮食利用率">
+			<indicator name="Access to improved water sources" about="获得良好的饮用水源的人口比例" unit="(percent of population with access)">获得良好的饮用水源的人口比例</indicator>
+			<indicator name="Percentage of Population with Access to Sanitation Facilities" about="享有卫生设施的人口比例" unit="(percent of population with access)">享有卫生设施的人口比例</indicator>
+		</dimension>
+	</suit>
+	<suit name="effects" id="结果指标">
+		<dimension name="access" id="粮食供应稳定性">
+			<indicator name="Prevalence of undernourishment" about="营养不良发生率" unit="(Percentage)">营养不良发生率</indicator>
+			<indicator name="Share of food expenditure of the poor" about="国内最低收入阶层食品支出占总消费支出的比例
+它提供的经济负担指标表示为了维持食物所要承担的经济负担" unit="(percentage)">贫困人口粮食支出所占比例</indicator>
+			<indicator name="Depth of the food deficit" about="营养不良人口的平均食物消耗乘以总的营养不良人数，再除以总人口数，可以表明如果要消除营养不良需要多少卡路里" unit="(kcal/caput/day)">粮食短缺程度</indicator>
+			<indicator name="Prevalence of food inadequacy" about="人口在未覆盖的粮食需求与正常的生理活动相关的风险比例，它也包括虽然不能算是长期营养不良的人，但很可能由于经济条件而不能获得足够的粮食" unit="(Percentage)">粮食不足发生率</indicator>
+		</dimension>
+		<dimension name="utilization" id="粮食利用率">
+			<indicator name="Percentage of children under 5 years of age affected by wasting" about="5岁以下儿童消瘦比例" unit="(percentage)">5岁以下儿童消瘦比例</indicator>
+			<indicator name="Percentage of children under 5 years of age who are stunted" about="5岁以下儿童发育迟缓比例" unit="(percentage)">5岁以下儿童发育迟缓比例</indicator>
+			<indicator name="Percentage of children under 5 years of age who are underweight" about="5岁以下儿童低体重比例" unit="(percentage)">5岁以下儿童低体重比例</indicator>
+			<indicator name="Percentage of adults who are underweight" about="成人低体重比例" unit="(percentage)">成人低体重比例</indicator>
+			<indicator name="Prevalence of anaemia among pregnant women" about="孕妇贫血比例" unit="(percentage)">孕妇贫血比例</indicator>
+			<indicator name="Prevalence of anaemia among children under 5 years of age" about="5岁以下儿童贫血比例" unit="(percentage)">5岁以下儿童贫血比例</indicator>
+		</dimension>
+	</suit>
+</indicators>

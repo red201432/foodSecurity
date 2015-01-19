@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<indicators>
+<indicator id="Percentage of children under 5 years of age who are stunted" name="5岁以下儿童发育迟缓比例">
+<related-indicators id="Percentage of children under 5 years of age who are underweight" name="5岁以下儿童低体重比例"></related-indicators>
+<related-indicators id="Share of food expenditure of the poor" name="贫困人口粮食支出所占比例"></related-indicators>
+<related-indicators id="Prevalence of food inadequacy" name="粮食不足发生率"></related-indicators>
+<related-indicators id="Percentage of Population with Access to Sanitation Facilities" name="享有卫生设施的人口比例"></related-indicators>
+<related-indicators id="Share of Dietary Energy Supply Derived from Cereals, Roots and Tubers" name="来自谷物、根和块茎膳食能量供应"></related-indicators>
+</indicator>
+<indicator id="Prevalence of food inadequacy" name="粮食不足发生率">
+<related-indicators id="Average Dietary Energy Supply Adequacy" name="平均膳食能量供应充足度"></related-indicators>
+<related-indicators id="Share of food expenditure of the poor" name="贫困人口粮食支出所占比例"></related-indicators>
+<related-indicators id="Average Protein Supply" name="平均蛋白质供应"></related-indicators>
+</indicator>
+<indicator id="Share of Dietary Energy Supply Derived from Cereals, Roots and Tubers" name="来自谷物、根和块茎膳食能量供应">
+<related-indicators id="Average supply of protein of animal origin" name="动物蛋白质平均供应"></related-indicators>
+</indicator>
+<indicator id="Share of food expenditure of the poor" name="贫困人口粮食支出所占比例">
+<related-indicators id="Access to improved water sources" name="获得良好的饮用水源的人口比例"></related-indicators>
+<related-indicators id="Percentage of Population with Access to Sanitation Facilities" name="享有卫生设施的人口比例"></related-indicators>
+</indicator>
+<indicator id="Access to improved water sources" name="获得良好的饮用水源的人口比例">
+<related-indicators id="Percentage of Population with Access to Sanitation Facilities" name="享有卫生设施的人口比例"></related-indicators>
+</indicator>
+<indicator id="Average Dietary Energy Supply Adequacy" name="平均膳食能量供应充足度">
+<related-indicators id="Average Protein Supply" name="平均蛋白质供应"></related-indicators>
+<related-indicators id="Average supply of protein of animal origin" name="动物蛋白质平均供应"></related-indicators>
+</indicator>
+</indicators>

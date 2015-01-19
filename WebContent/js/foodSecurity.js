@@ -1,0 +1,123 @@
+﻿//显示或者隐藏部分文本
+$(function () {
+    var $link = $(".artList a");
+    var $hide = $(".artList :eq(1)");
+    $link.click(function () {
+        if ($(this).html() == "显示") {
+            $(this).html("隐藏");
+            $hide.show();
+        }
+        else {
+            $(this).html("显示");
+            $hide.hide();
+        }
+    })
+});
+$(function () {
+    $("#gotop").click(function () {
+        $("body,html").animate(scrollTo(0, 0));
+    })
+    $("#gotop").mousemove(function () {//change color of gotop
+        this.style.backgroundColor = "#184785";
+    })
+    $("#gotop").mouseout(function () {
+        this.style.backgroundColor = "gray";
+  })
+})
+$(function () {
+    $(".divTitle").mouseover(function () {
+        $(this).addClass("divCourrColor").next(".divContent").css("display", "block");
+    });
+});
+$(function () {
+    $(".divContent").mouseout(function () {
+        $(this).addClass("divCourrColor").next(".divContent").css("display", "none");
+    });
+});
+var tDiv = $("#divTmp");
+var oDiv = $("#divOut");
+var cDiv = tDiv.innerHTML;
+oDiv.innerHTML = cDiv;
+$(function(){
+$.ajax({
+    url: 'xml/world.xml',
+    type: 'GET',
+    dataType: 'xml',
+    timeout: 1000,  //设定超时
+    cache: false,   //禁用缓存
+    error: function (xml) {
+        alert("加载XML文档出错!");
+    },
+    success: GetStudentComplete   //设置成功后回调函数
+});
+
+//获取XML成功后回调函数
+function GetStudentComplete(xml) {
+    $(xml).find("place").each(function (i) {     //查找所有place节点并遍历
+        //var id = $(this).children("id");          //获得子节点
+        var id_vaule = $(this).attr("id");              //获取节点文本
+        var email_vaule = $(this).attr("name");  //获取节点的属性
+        $("#world").append("<option value='" + email_vaule + "'>" + id_vaule + "</option>");
+    });
+    $("#world").on("change", function () {
+        alert($("#world option:selected").text());
+        var parentNode = $("#world option:selected");
+        $("#country-list").empty();
+        var countryArray = new Array;
+            
+        $(xml).find("place[id='" + $("#world option:selected").text() + "']>country").each(function (i) {//选择点击的节点下面的子节点
+            var country_text = $(this).text();
+            var country_name = $(this).attr("name");
+            $("#country-list").append("<option value='" + country_name + "'>" + country_text + "</option>");
+            // $("#country-multi-list").append("<input type='checkbox' name='" + country_name + "' value='" + country_name + "' /> " + country_text + "<br />")
+        });
+        $("#country-list").on("change", function () {
+            countryArray.push($("#country-list option:selected").text());
+            alert(countryArray);
+        });
+    });
+    
+}
+});
+//获取 indicators.xml 数据
+$(document).ready(function () {
+    $.ajax({
+        url: 'xml/indicators.xml',
+        type: 'GET',
+        dataType: 'xml',
+        timeout: 1000,  //设定超时
+        cache: false,   //禁用缓存
+        error: function (xml1) {
+            alert("加载XML文档出错!");
+        },
+        success: GetStudentComplete   //设置成功后回调函数
+    });
+
+    //获取XML成功后回调函数
+    function GetStudentComplete(xml1) {
+        $(xml1).find("suit").each(function (i) {     //查找所有place节点并遍历
+            //var id = $(this).children("id");          //获得子节点
+            var id_vaule = $(this).attr("id");              //获取节点文本
+            var email_vaule = $(this).attr("name");  //获取节点的属性
+            $("#select_indicators").append("<option value='" + email_vaule + "'>" + id_vaule + "</option>");
+        });
+        $("#select_indicators").on("change", function () {
+            alert($("#select_indicators option:selected").text());
+            var parentNode = $("#select_indicators option:selected");
+            $("#select_indicator").empty();
+            var countryArray = new Array;
+
+            $(xml1).find("suit[id='" + $("#select_indicators option:selected").text()+"']>dimension>indicator").each(function (i) {//选择点击的节点下面的子节点
+                var country_text = $(this).text();
+              
+                var country_name = $(this).attr("name");
+                $("#select_indicator").append("<option value='" + country_name + "'>" + country_text + "</option>");
+                $("#select_indicator").on("change", function () {
+                    countryArray.push($("#select_indicator option:selected").text());
+                    alert(countryArray);
+                });
+                // $("#country-multi-list").append("<input type='checkbox' name='" + country_name + "' value='" + country_name + "' /> " + country_text + "<br />");
+            });
+        });
+    }
+});

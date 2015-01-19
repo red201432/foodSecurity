@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<!--动态配置负责 save和print 输出不对或者报错 No result defined for action javabean.Submit and result success-->
+	<!--<package name="jsonManager" extends="json-default" namespace="/Json">
+		<action name="userJson" class="javabean.TestJson">
+		<result type="json">
+		<param name="inputName">users</param>
+		</result>
+		</action>
+	</package>
+	-->
+	<package name="default" extends="struts-default" namespace="/">
+ 		<default-action-ref name="index" />
+		<action name="index">
+			<result>/index.html</result>
+		</action>
+         <action name="relatedQuery" class="foodSecurity.RelatedQuery">
+              <result name="success" type="stream">
+              <param name="contentType">text/html</param>
+              <param name="inputName">result</param>
+              </result>              
+         </action>
+		</package>
+</struts>

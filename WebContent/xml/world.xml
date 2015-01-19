@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--已经去掉一部分数据不完整的国家:"Sudan", "Western Sahara", "Democratic Republic of the Congo", "Equatorial Guinea", "Federal Republic of Somalia", "Mayotte", "Réunion", "Saint Helena", "South Sudan", "Georgia", "Afghanistan", "Bhutan", "Myanmar", "Singapore", "Bahrain", "Oman", "Qatar", "Anguilla", "Aruba", "British Virgin Islands", "Cayman Islands", "Guadeloupe", "Martinique", "Montserrat", "Puerto Rico", "Turks and Caicos Islands", "United States Virgin Islands", "Falkland Is (Malvinas)", "French Guiana", "American Samoa", "Cook Islands", "Guam", "Marshall Islands", "Micronesia (Federated States of)", "Nauru", "Niue", "Northern Mariana Islands", "Palau", "Papua New Guinea", "Tokelau", "Tonga", "Tuvalu", "Wallis and Futuna Islands", "Andorra", "Faeroe Islands", "Gibraltar", "Greenland", "Holy See", "Liechtenstein", "Monaco", "Montenegro", "Saint Pierre and Miquelon", "San Marino", "Serbia", "Serbia and Montenegro" -->
+<world>
+  <regin type="developing_regin">
+  <area name="Africa" >
+  <place name="North Africa" id="北非">
+  <country name="Algeria">阿尔及利亚</country>
+  <country name="Egypt">埃及</country>
+<country name="Libya">利比亚</country>
+<country name="Morocco">摩洛哥</country>
+<country name="Tunisia">突尼斯</country>
+</place>
+<place name="Sub Saharan Africa" id="撒哈拉以南非洲地区">
+<country name="Angola">安哥拉</country>
+<country name="Benin">贝宁</country>
+<country name="Botswana">博茨瓦纳</country>
+<country name="Burkina Faso">布基纳法索</country>
+<country name="Burundi">布隆迪</country>
+<country name="Cameroon">喀麦隆</country>
+<country name="Cape Verde">佛得角</country>
+<country name="Central African Republic">中非共和国</country>
+<country name="Chad">乍得</country>
+<country name="Comoros">科摩罗</country>
+<country name="Congo">刚果</country>
+<country name="Coate d'Ivoire">科特迪瓦</country>
+<country name="Djibouti">吉布提</country>
+<country name="Gabon">加蓬</country>
+<country name="Gambia">冈比亚</country>
+<country name="Ghana">加纳</country>
+<country name="Guinea">几内亚</country>
+<country name="Kenya">肯尼亚</country>
+<country name="Lesotho">莱索托</country>
+<country name="Liberia">利比里亚</country>
+<country name="Madagascar">马达加斯加</country>
+<country name="Malawi">马拉维</country>
+<country name="Mali">马里</country>
+<country name="Mauritania">毛里塔尼亚</country>
+<country name="Mauritius">毛里求斯</country>
+<country name="Mozambique">莫桑比克</country>
+<country name="Namibia">纳米比亚</country>
+<country name="Niger">尼日尔</country>
+<country name="Nigeria">尼日利亚</country>
+<country name="Rwanda">卢旺达</country>
+<country name="Sao Tome and Principe">圣多美和普林西比</country>
+<country name="Senegal">塞内加尔</country>
+<country name="Seychelles">塞舌尔</country>
+<country name="Sierra Leone">塞拉利昂</country>
+<country name="South Africa">南非</country>
+<country name="Sudan (former)">前苏丹</country>
+<country name="Swaziland">斯威士兰</country>
+<country name="Togo">多哥</country>
+<country name="Uganda">乌干达</country>
+<country name="United Republic of Tanzania">坦桑尼亚联合共和国</country>
+<country name="Zambia">赞比亚</country>
+<country name="Zimbabwe">津巴布韦</country>
+</place>
+</area>
+<area name="Asia" >亚洲
+<place name="Caucasus and Central Asia" id="高加索和中亚">
+<country name="Armenia">亚美尼亚</country>
+<country name="Azerbaijan">阿塞拜疆</country>
+<country name="Kazakhstan">哈萨克斯坦</country>
+<country name="Kyrgyzstan">吉尔吉斯斯坦</country>
+<country name="Tajikistan">塔吉克斯坦</country>
+<country name="Turkmenistan">土库曼斯坦</country>
+<country name="Uzbekistan">乌兹别克斯坦</country>
+</place>
+<place name="East Asia" id="东亚">
+<country name="China">中国</country>
+<country name="Democratic People's ">朝鲜民主主义人民共和国</country>
+<country name="Republic of Korea">韩国</country>
+<country name="Mongolia">蒙古</country>
+</place>
+<place name="South Asia" id="南亚">
+<country name="Bangladesh">孟加拉国</country>
+<country name="India">印度</country>
+<country name="Iran (Islamic Republic of)">伊朗（伊斯兰共和国）</country>
+<country name="Maldives">马尔代夫</country>
+<country name="Nepal">尼泊尔</country>
+<country name="Pakistan">巴基斯坦</country>
+<country name="Sri Lanka">斯里兰卡</country>
+</place>
+<place name="South East Asia" id="东南亚">
+<country name="Brunei Darussalam">文莱达鲁萨兰国</country>
+<country name="Cambodia">柬埔寨</country>
+<country name="Indonesia">印度尼西亚</country>
+<country name="Lao People's Democratic Republic">老挝人民民主共和国</country>
+<country name="Malaysia">马来西亚</country>
+<country name="Philippines">菲律宾</country>
+<country name="Thailand">泰国</country>
+<country name="Timor Leste">东帝汶</country>
+<country name="Viet Nam">越南</country>
+</place>
+<place name="West Asia" id="西亚">
+<country name="Iraq">伊拉克</country>
+<country name="Jordan">约旦</country>
+<country name="Kuwait">科威特</country>
+<country name="Lebanon">黎巴嫩</country>
+<country name="Occupied Palestinian Territories">巴勒斯坦被占领土</country>
+<country name="Saudi Arabia">巴勒斯坦被占领土沙特阿拉伯</country>
+<country name="Syrian Arab Republic">阿拉伯叙利亚共和国</country>
+<country name="Turkey">土耳其</country>
+<country name="United Arab Emirates">阿拉伯联合酋长国</country>
+<country name="Yemen">也门</country>
+</place>
+</area>
+<area name="Latin America and the Caribbean">拉丁美洲和加勒比地区
+<place name="Caribbean" id="加勒比地区">
+<country name="Antigua and Barbuda">安提瓜和巴布达</country>
+<country name="Bahamas">巴哈马</country>
+<country name="Barbados">巴巴多斯</country>
+<country name="Cuba">古巴</country>
+<country name="Dominica">多米尼加</country>
+<country name="Dominican Republic">多明尼加共和国</country>
+<country name="Grenada">格林纳达</country>
+<country name="Haiti">海地</country>
+<country name="Jamaica">牙买加</country>
+<country name="Netherlands Antilles">荷属安的列斯</country>
+<country name="Saint Kitts and Nevis">圣基茨和尼维斯</country>
+<country name="Saint Lucia">圣卢西亚</country>
+<country name="Saint Vincent and the Grenadines">圣文森特和格林纳丁斯</country>
+<country name="Trinidad and Tobago">特立尼达和多巴哥</country>
+</place>
+<place name="Latin America" id="拉丁美洲">
+<country name="Argentina">阿根廷</country>
+<country name="Belize">伯利兹</country>
+<country name="Brazil">巴西</country>
+<country name="Chile">智利</country>
+<country name="Colombia">哥伦比亚</country>
+<country name="Costa Rica">哥斯达黎加</country>
+<country name="Ecuador">厄瓜多尔</country>
+<country name="El Salvador">萨尔瓦多</country>
+<country name="Guatemala">危地马拉</country>
+<country name="Guyana">圭亚那</country>
+<country name="Honduras">洪都拉斯</country>
+<country name="Mexico">墨西哥</country>
+<country name="Nicaragua">尼加拉瓜</country>
+<country name="Panama">巴拿马</country>
+<country name="Paraguay">巴拉圭</country>
+<country name="Peru">秘鲁</country>
+<country name="Suriname">苏里南</country>
+<country name="Uruguay">乌拉圭</country>
+<country name="Venezuela (Bolivarian Republic of)">委内瑞拉</country>
+</place>
+</area>
+<area name="Oceania">大洋洲
+<place name="Oceania" id="大洋洲" >
+<country name="Fiji">斐济</country>
+<country name="French Polynesia">法属波利尼西亚</country>
+<country name="Kiribati">基里巴斯</country>
+<country name="New Caledonia">新喀里多尼亚</country>
+<country name="Samoa">萨摩亚</country>
+<country name="Solomon Islands">所罗门群岛</country>
+<country name="Vanuatu">瓦努阿图</country>
+</place>
+</area>
+</regin>
+  <regin type="developed_regin">
+  <area name="developed">
+<place name="developed" id="发达地区">
+<country name="Albania">阿尔巴尼亚</country>
+<country name="Australia">澳大利亚</country>
+<country name="Austria">奥地利</country>
+<country name="Belarus">白俄罗斯</country>
+<country name="Belgium">比利时</country>
+<country name="Bosnia and Herzegovina">波斯尼亚和黑塞哥维那</country>
+<country name="Bulgaria">保加利亚</country>
+<country name="Canada">加拿大</country>
+<country name="Croatia">克罗地亚</country>
+<country name="Cyprus">塞浦路斯</country>
+<country name="Czech Republic">捷克共和国</country>
+<country name="Denmark">丹麦</country>
+<country name="Estonia">爱沙尼亚</country>
+<country name="Finland">芬兰</country>
+<country name="France">法国</country>
+<country name="Germany">德国</country>
+<country name="Greece">希腊</country>
+<country name="Hungary">匈牙利</country>
+<country name="Iceland">冰岛</country>
+<country name="Ireland">爱尔兰</country>
+<country name="Israel">以色列</country>
+<country name="Italy">意大利</country>
+<country name="Japan">日本</country>
+<country name="Latvia">拉脱维亚</country>
+<country name="Lithuania">立陶宛</country>
+<country name="Luxembourg">卢森堡</country>
+<country name="Malta">马耳他</country>
+<country name="Netherlands">荷兰</country>
+<country name="New Zealand">新西兰</country>
+<country name="Norway">挪威</country>
+<country name="Poland">波兰</country>
+<country name="Portugal">葡萄牙</country>
+<country name="Republic of Moldova">摩尔多瓦共和国</country>
+<country name="Romania">罗马尼亚</country>
+<country name="Russian Federation">俄罗斯联邦</country>
+<country name="Slovakia">俄罗斯联邦</country>
+<country name="Slovakia">斯洛伐克</country>
+<country name="Slovenia">斯洛文尼亚</country>
+<country name="Spain">西班牙</country>
+<country name="Sweden">瑞典</country>
+<country name="Switzerland">瑞士</country>
+<country name="The former Yugoslav Republic of Macedonia">马其顿前南斯拉夫马其顿共和国</country>
+<country name="Ukraine">乌克兰</country>
+<country name="United Kingdom">英国</country>
+<country name="United States of America">美国</country>
+</place>
+</area>
+</regin>
+</world>
