@@ -7,9 +7,10 @@
 package foodSecurity;
 
 public class RelatedQuery1 {
-	String timespanString=null;
-	String indicatorName=null;
-
+	 String timespanString=null;
+	 String indicatorName=null;
+	 String countryName=null;
+	
 	public String getTimespanString(){
 		return timespanString;
 	}

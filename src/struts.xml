@@ -25,5 +25,17 @@
               <param name="inputName">result</param>
               </result>              
          </action>
+          <action name="singlequery" class="foodSecurity.SingleQuery">
+              <result name="success" type="stream">
+              <param name="contentType">text/html</param>
+              <param name="inputName">inputstream</param>
+              </result>
+         </action>
+         <action name="singlequery1" class="foodSecurity.SingleQuery">
+              <result name="success" type="stream">
+              <param name="contentType">text/html</param>
+              <param name="inputName">singleResult</param>
+              </result>
+         </action>
 		</package>
 </struts>

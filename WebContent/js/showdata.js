@@ -10,7 +10,7 @@ $(function() {
 	});
 });
 var countryArray = new String();
-$(document)
+$(document)//获取相关指标
 		.ready(
 				function() {
 					$.ajax({
@@ -43,13 +43,15 @@ $(document)
 								.on(
 										"change",
 										function() {
-											/*alert($(
-													"#indicatorName option:selected")
-													.text().toLocaleLowerCase());
-											countryArray += ($(
-													"#indicatorName option:selected")
-													.val().toLocaleLowerCase() + "@");
-													*/
+											/*
+											 * alert($( "#indicatorName
+											 * option:selected")
+											 * .text().toLocaleLowerCase());
+											 * countryArray += ($(
+											 * "#indicatorName option:selected")
+											 * .val().toLocaleLowerCase() +
+											 * "@");
+											 */
 											$(xml1)
 													.find(
 															"indicator[name='"
@@ -83,8 +85,9 @@ $(document)
 																// country_text
 																// + "<br />");
 															});
-											//countryArray=countryArray.substring(0, countryArray.length-2);
-											//alert(countryArray);
+											// countryArray=countryArray.substring(0,
+											// countryArray.length-2);
+											// alert(countryArray);
 										});
 					}
 				});
@@ -125,10 +128,12 @@ function getXmlHttp() {// select xmlHttpRequest vision
 // send data
 var jscode;
 function senddata() {
-	var url = "http://localhost:8088/SSHtest/relatedQuery.action?indicatorName="
-			+ showValues() + "&timespanstart=" + getTimeStart()
+	var url = "relatedQuery.action?indicatorName="
+			+ showValues()
+			+ "&timespanstart="
+			+ getTimeStart()
 			+ "&timespanend=" + getTimeEnd();
-	//var url1="relatedQuery.action";
+	// var url1="relatedQuery.action";
 	if (!xmlHttpObj)
 		xmlHttpObj = getXmlHttp();
 	if (!xmlHttpObj)
@@ -146,8 +151,9 @@ function gettimespan() {
 	if (xmlHttpObj.readyState == 4 && xmlHttpObj.status == 200) {
 		// loadingDiv.style.display="none";
 		jscode = xmlHttpObj.responseText.trim();
-		//document.getElementById('timespan1').innerHTML = xmlHttpObj.responseText;
-		var jsonobj = eval("(" + jscode + ")");	    
+		// document.getElementById('timespan1').innerHTML =
+		// xmlHttpObj.responseText;
+		var jsonobj = eval("(" + jscode + ")");
 		indicatorNameTransform(jsonobj);
 		var timeArray = new Array();
 		for (var i = parseInt(getTimeStart()); i <= getTimeEnd() - 2; i++) {
@@ -164,7 +170,7 @@ function gettimespan() {
 				// 指定图表标题
 				},
 				xAxis : {
-					
+
 					categories : timeArray, // 显示x轴的标注
 					labels : { // 标注的格式
 						rotation : timeArray.length < 6 ? 0 : 60,
@@ -176,27 +182,27 @@ function gettimespan() {
 				},
 
 				yAxis : {
-					plotLines: [{   //一条延伸到整个绘图区的线，标志着轴中一个特定值,比如参考值
-	                    color: '#000',
-	                    dashStyle: 'Dash', //Dash,Dot,Solid,默认Solid
-	                    width: 1.5,
-	                    value: 45,  //x轴显示位置，一个标记为1
-	                    visible:true,
-	                    label:{
-	                    	text:"developed Area"	                    	
-	                    }
-	                }],
+					plotLines : [ { // 一条延伸到整个绘图区的线，标志着轴中一个特定值,比如参考值
+						color : '#000',
+						dashStyle : 'Dash', // Dash,Dot,Solid,默认Solid
+						width : 1.5,
+						value : [ 35, 23, 124, 34, 23 ], // x轴显示位置，一个标记为1
+						visible : true,
+						label : {
+							text : "developed Area"
+						}
+					} ],
 					title : {
 						text : 'Percentage' // 指定y轴的标题
 					},
 					lineWidth : 1
 				},
-				legend: {
-		            layout: 'vertical',
-		            align: 'right',
-		            verticalAlign: 'middle',
-		            borderWidth: 0
-		        },
+				legend : {
+					layout : 'vertical',
+					align : 'right',
+					verticalAlign : 'middle',
+					borderWidth : 1
+				},
 				series : jsonobj
 			});
 		});

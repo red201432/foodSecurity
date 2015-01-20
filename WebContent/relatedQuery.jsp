@@ -23,14 +23,7 @@
 </head>
 <body>
 	<div id="container">
-		<!--整体容器-->
-		<!-- <div id="top_bar">登录|注册</div>  -->
-		<div id="header">
-			<h1>基于本体的粮食安全查询系统</h1>
-		</div>
-		<div id="globalnav">
 			<jsp:include page="headerdirect.html"></jsp:include>
-		</div>
 		<div id="content">
 			<form id="form1" action="">
 				选择指标：<select id="indicatorName">
@@ -92,6 +85,7 @@
 		</div>
 		<!-- 内容部分 -->
 		<div id="footer"><jsp:include page="footer.html"></jsp:include></div>
+		</div>
 		<div id="gotop">回到顶部</div>
 </body>
 </html>

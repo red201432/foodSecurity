@@ -13,7 +13,7 @@ $(function () {
         }
     })
 });
-$(function () {
+$(function () {//回到顶部
     $("#gotop").click(function () {
         $("body,html").animate(scrollTo(0, 0));
     })
@@ -34,11 +34,8 @@ $(function () {
         $(this).addClass("divCourrColor").next(".divContent").css("display", "none");
     });
 });
-var tDiv = $("#divTmp");
-var oDiv = $("#divOut");
-var cDiv = tDiv.innerHTML;
-oDiv.innerHTML = cDiv;
-$(function(){
+//var countryName;
+$(function(){//获取地区和国家
 $.ajax({
     url: 'xml/world.xml',
     type: 'GET',
@@ -80,6 +77,7 @@ function GetStudentComplete(xml) {
 }
 });
 //获取 indicators.xml 数据
+var indicatorName=new Array();
 $(document).ready(function () {
     $.ajax({
         url: 'xml/indicators.xml',
@@ -95,7 +93,21 @@ $(document).ready(function () {
 
     //获取XML成功后回调函数
     function GetStudentComplete(xml1) {
-        $(xml1).find("suit").each(function (i) {     //查找所有place节点并遍历
+        $(xml1).find("indicator").each(function (i) {     //查找所有indicator节点并遍历
+            //var id = $(this).children("id");          //获得子节点
+            var id_vaule = $(this).text();              //获取节点文本
+            var email_vaule = $(this).attr("name");  //获取节点的属性
+            $("#select_indicators").append("<option value='" + email_vaule + "'>" + id_vaule + "</option>");
+        });
+        $("#select_indicators").on("change", function () {
+           // indicatorName.push($("#select_indicators option:selected").text());
+        	indicatorName=$("#select_indicators option:selected").value;
+            alert(indicatorName);
+        });
+    }
+    /*
+    function GetStudentComplete(xml1) {
+        $(xml1).find("indicator").each(function (i) {     //查找所有place节点并遍历
             //var id = $(this).children("id");          //获得子节点
             var id_vaule = $(this).attr("id");              //获取节点文本
             var email_vaule = $(this).attr("name");  //获取节点的属性
@@ -120,4 +132,5 @@ $(document).ready(function () {
             });
         });
     }
+    */
 });

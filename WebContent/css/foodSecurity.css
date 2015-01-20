@@ -3,7 +3,16 @@
 	margin: 0;
 	padding: 0;
 }
-
+p{
+	font-color:whilt;
+	word-spacing:5px;
+	line-height:150%;
+	text-indent:2em;
+	padding-left:2em;
+	padding-right:2em;
+	font-size:14px;
+	white-space: normal;
+}
 #container {
 	top: 0px;
 	background-color: white;
@@ -41,6 +50,7 @@
 	background-image: url("../images/food-header.jpg");
 	background-color: #1B4F93;
 	width: 1000px;
+	
 }
 
 #globalnav {

@@ -12,34 +12,27 @@
 <link rel="stylesheet" type="text/css" href="css/prettify.css" />
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/highcharts.js"></script>
-<script type="text/javascript" src="js/foodSecurity.js"></script>
+<script type="text/javascript" src="js/multiquery.js"></script>
 <script type="text/javascript" src="js/ui/jquery.ui.core.js"></script>
 <script type="text/javascript" src="js/ui/jquery.ui.widget.js"></script>
 <script type="text/javascript" src="js/assets/prettify.js"></script>
 <script type="text/javascript"
 	src="js/multiselectSrc/jquery.multiselect.js"></script>
 <script type="text/javascript" src="js/indicatorNameTransform.js"></script>
-<script type="text/javascript" src="js/showdata.js"></script>
+<script type="text/javascript" src="js/indicatorquery-single.js"></script>
 </head>
 <body>
 	<div id="container">
 		<!--整体容器-->
-		<!-- <div id="top_bar">登录|注册</div>  -->
-		<div id="header">
-			<h1>基于本体的粮食安全查询系统</h1>
-		</div>
-		<div id="globalnav">
+		
 			<jsp:include page="headerdirect.html"></jsp:include>
-		</div>
+		
 		<div id="content">
 			<form id="form1" action="">
-				选择指标：<select id="indicatorName">
-				</select> 地区：<select id="world"></select> 国家：<select id="country-list"
-					name="countryName">
-					<option value="China">中国</option>
-					<option value="World">世界</option>
-					<option value="Africa">非洲</option>
-					<option value="Egypt">埃及</option>
+				选择指标：<select id="select_indicators" name="indicatorName">
+				</select>
+				地区：<select id="world"></select> 
+				国家：<select id="country-list" name="countryName">
 				</select> 开始时间:<select name="timespanstart" onchange="changeStateOfTimeend()">
 					<option value="1990">1990</option>
 					<option value="1991">1991</option>
@@ -87,13 +80,14 @@
 				<button type="button" onclick="senddata()">查询</button>
 			</form>
 			<div id="timespan1"></div>
-			<div id="show_data" style="width: 800px; height: 400px;">
+			<div id="show_data" style="width: 1000px; height: 400px;">
 				<div id="loading"></div>
 			</div>
 		</div>
 		<!-- 内容部分 -->
 		<div id="footer">
 		<jsp:include page="footer.html"></jsp:include>
+		</div>
 		</div>
 		<div id="gotop">回到顶部</div>
 </body>

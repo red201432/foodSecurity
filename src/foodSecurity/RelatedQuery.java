@@ -35,6 +35,7 @@ public class RelatedQuery extends ActionSupport {
 	private String timespanString;
 	private Query query;
 	private InputStream result;
+	
 	private ArrayList<String> reArrayList=new ArrayList<String>();
 	RelatedQuery1 rq=new RelatedQuery1();
 	public InputStream queryList() throws Exception {
