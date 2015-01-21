@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>指标查询</title>
+<title>查询对比</title>
 <link href="css/foodSecurity.css" rel="stylesheet" type="text/css" />
 <link href="css/jquery-test1.css" rel="stylesheet" type="text/css" />
 <link href="css/tupianlunhuan.css" rel="stylesheet" type="text/css" />
@@ -16,8 +16,7 @@
 <script type="text/javascript" src="js/ui/jquery.ui.core.js"></script>
 <script type="text/javascript" src="js/ui/jquery.ui.widget.js"></script>
 <script type="text/javascript" src="js/assets/prettify.js"></script>
-<script type="text/javascript"
-	src="js/multiselectSrc/jquery.multiselect.js"></script>
+<script type="text/javascript" src="js/multiselectSrc/jquery.multiselect.js"></script>
 <script type="text/javascript" src="js/indicatorNameTransform.js"></script>
 <script type="text/javascript" src="js/indicatorquery-single.js"></script>
 </head>

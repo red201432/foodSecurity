@@ -83,7 +83,7 @@ public class SingleQuery extends ActionSupport {
 		}
 		reArrayList.add("{\"name\"" + ":\"" + countriesName[j] + "\"" + ","
 				+ "\"data\"" + ":" + myArrayList + "}");
-		myArrayList.clear();
+		myArrayList.clear();//将myArrayList清空 
 		}
 		try {
 			inputstream=new ByteArrayInputStream(reArrayList.toString().getBytes("utf-8"));
