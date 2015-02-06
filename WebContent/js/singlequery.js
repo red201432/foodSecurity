@@ -110,6 +110,6 @@ $(document).ready(function () {
     }
 });
 function getCountryName1(){
-	return countryArray1;
-	
+	//alert(countryArray1);
+	return countryArray1;	
 }

@@ -1,18 +1,9 @@
-﻿//显示或者隐藏部分文本
-$(function () {
-    var $link = $(".artList a");
-    var $hide = $(".artList :eq(1)");
-    $link.click(function () {
-        if ($(this).html() == "显示") {
-            $(this).html("隐藏");
-            $hide.show();
-        }
-        else {
-            $(this).html("显示");
-            $hide.hide();
-        }
-    })
-});
+﻿/*
+ * 获取指标数据 indicators.xml和地理数据 world.xml
+ * 
+ * 
+ */
+
 $(function () {//回到顶部
     $("#gotop").click(function () {
         $("body,html").animate(scrollTo(0, 0));
@@ -57,7 +48,7 @@ function GetStudentComplete(xml) {
         $("#world").append("<option value='" + email_vaule + "'>" + id_vaule + "</option>");
     });
     $("#world").on("change", function () {
-        alert($("#world option:selected").text());
+       // alert($("#world option:selected").text());
         var parentNode = $("#world option:selected");
         $("#country-list").empty();
        
@@ -73,7 +64,7 @@ function GetStudentComplete(xml) {
         	countryArray1.length=0;
             countryArray+="@"+$("#country-list option:selected").attr("value");
             countryArray1.push($("#country-list option:selected").text());
-            alert(countryArray);
+           // alert(countryArray);
         });
     });
     
@@ -106,11 +97,11 @@ $(document).ready(function () {
            // indicatorName.push($("#select_indicators option:selected").text());
         	indicatorName=$("#select_indicators option:selected").attr('value');
         	indicatorName1=$("#select_indicators option:selected").text();
-            alert(indicatorName);
+           // alert(indicatorName);
                     });
     }
 });
 function getCountryName1(){
+	//alert(countryArray1);
 	return countryArray1;
-	
 }

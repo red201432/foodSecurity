@@ -4,8 +4,7 @@
 		<dimension name="availability" id="粮食供应充足" about="粮食的可供量反映的不仅是食物的数量，还有质量和多样化程度。用来评估可供量的指标包括膳食能量供给充足度、来自谷物、块根作物的卡路里所占比例、平均蛋白质供给量、平均动物性蛋白质供给量以及粮食产量平均值。">
 			<indicator name="Average Dietary Energy Supply Adequacy" about="平均膳食能量供应充足度是膳食能量供应与平均膳食能量要求（Average Dietary Energy Requirement,ADER）的百分比。平均膳食能量充足度大于100则膳食能量供应充足，小于100则膳食能量供应不充足。此指标有助于了解营养不良是否是由于粮食供应不足或不良而产生的。" unit="(Percentage)" unit-cn="百分比">平均膳食能量供应充足度</indicator>
 			<indicator name="Average Value of Food Production" about="食品生产（FAO估计）平均值，以人均多少美元表示。不同国家粮食生产的经济规模可以参照此参数进行比较。" unit="(I$ per caput)" unit-cn="美元/人">食品生产的平均值</indicator>
-			<indicator name="Share of Dietary Energy Supply Derived from Cereals, Roots and Tubers" about="由谷物块、根和块茎提供的能量与总膳食能量供应的比值。根据这个值可以估计营养不良的是否由粮食供应不足或不良引起，以及营养的分配是否合理。" unit="(kcal/caput/day
-)" unit-cn="千卡/人/天">来自谷物、根和块茎膳食能量供应</indicator>
+			<indicator name="Share of Dietary Energy Supply Derived from Cereals, Roots and Tubers" about="由谷物块、根和块茎提供的能量与总膳食能量供应的比值。根据这个值可以估计营养不良的是否由粮食供应不足或不良引起，以及营养的分配是否合理。" unit="(kcal/caput/day)" unit-cn="千卡/人/天">来自谷物、根和块茎膳食能量供应</indicator>
 			<indicator name="Average Protein Supply" about="平均蛋白质供给（克/人/天）。根据这个值可以估计营养不良的是否由粮食供应不足或不良引起，以及营养的分配是否合理。" unit="(gr/caput/day)" unit-cn="克/人/天">平均蛋白质供应</indicator>
 			<indicator name="Average supply of protein of animal origin" about="动物来源的蛋白质的平均供应。根据这个值可以估计营养不良的是否由粮食供应不足或不良引起，以及营养的分配是否合理。" unit="(gr/caput/day)" unit-cn="克/人/天" >动物蛋白质平均供应</indicator>
 		</dimension>
@@ -35,9 +34,9 @@
 		<dimension name="access" id="粮食供应稳定性">
 			<indicator name="Prevalence of undernourishment" about="营养不良通常指的是起因于摄入不足、吸收不良或过度损耗营养素所造成的营养不足,但也可能包含由于暴饮暴食或过度的摄入特定的营养素而造成的营养过剩。如果不能长期摄取由适当数量、种类或质量的营养素所构成的健康饮食，个体将营养不良。长期的营养不良可能导致饥饿死亡。消除营养不良是粮食安全的最终目的。" unit="(Percentage)" unit-cn="百分比">营养不良发生率</indicator>
 			<indicator name="Share of food expenditure of the poor" about="国内最低收入阶层食品支出占总消费支出的比例
-它提供的经济负担指标表示维持食物所要承担的经济负担" unit="(percentage)" unit-cn="百分比" >贫困人口粮食支出所占比例</indicator>
-			<indicator name="Depth of the food deficit" about="营养不良人口的平均食物消耗乘以总的营养不良人数，再除以总人口数，可以表明如果要消除营养不良需要多少卡路里" unit="(kcal/caput/day)" unit-cn="千卡/人/天">粮食短缺程度</indicator>
-			<indicator name="Prevalence of food inadequacy" about="人口在未覆盖的粮食需求与正常的生理活动相关的风险比例，它也包括虽然不能算是长期营养不良的人，但很可能由于经济条件而不能获得足够的粮食" unit="(Percentage)" unit-cn="百分比">粮食不足发生率</indicator>
+它提供的经济负担指标表示维持食物所要承担的经济负担." unit="(percentage)" unit-cn="百分比" >贫困人口粮食支出所占比例</indicator>
+			<indicator name="Depth of the food deficit" about="营养不良人口的平均食物消耗乘以总的营养不良人数，再除以总人口数，可以表明如果要消除营养不良需要多少卡路里." unit="(kcal/caput/day)" unit-cn="千卡/人/天">粮食短缺程度</indicator>
+			<indicator name="Prevalence of food inadequacy" about="人口在未覆盖的粮食需求与正常的生理活动相关的风险比例，它也包括虽然不能算是长期营养不良的人，但很可能由于经济条件而不能获得足够的粮食." unit="(Percentage)" unit-cn="百分比">粮食不足发生率</indicator>
 		</dimension>
 		<dimension name="utilization" id="粮食利用率">
 			<indicator name="Percentage of children under 5 years of age affected by wasting" about="5岁以下儿童消瘦比例，儿童的年龄性别体重与同年龄同性别参照人群标准相比，低于中位数减2个标准差，但高于或等于中位数减3个标准差，为中度体重低下，如低于参照人群的中位数减3个标准差为重度体重低下，此指标反映儿童过去和（或）现在有慢性和（或）急性营养不良，单凭此指标不能区分属急性还是慢性营养不良。" unit="(percentage)">5岁以下儿童消瘦比例</indicator>

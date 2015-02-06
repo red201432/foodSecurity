@@ -150,8 +150,8 @@ function gettimespan() {
 	if (xmlHttpObj.readyState == 4 && xmlHttpObj.status == 200) {
 		// loadingDiv.style.display="none";
 		jscode = xmlHttpObj.responseText.trim();
-		// document.getElementById('timespan1').innerHTML =
-		// xmlHttpObj.responseText;
+		 document.getElementById('timespan1').innerHTML =
+		 xmlHttpObj.responseText;
 		var jsonobj = eval("(" + jscode + ")");
 		indicatorNameTransform(jsonobj);
 		var timeArray = new Array();

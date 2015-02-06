@@ -61,16 +61,34 @@ a:hover {
 
 }
 
-
+.dimensionName {
+	font-family: STFangsong;
+    font-size: 16px;
+    font-weight:bold;
+}
+.dimensionName a{
+	
+	color:black;
+}
 .indicatorName {
     font-family: STFangsong;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight:bold;
+    //text-indent:2em;//设置文本缩进
 }
 
+.indicatorName a{
+	color:black;
+	
+}
+
+/*a:link{color: #FFFFFF ; text-decoration:none;} /*常规时候的样式*/
+/*	a.color1:visited{color: #FFFFFF; text-decoration:none;} /*鼠标指上去的样式*/
+/*	a.color1:hover {color: #FFFFFF; text-decoration:underline;} /*访问过后的样式*/
 .indicatorAbout {
     font-size: 14px;
     font-weight: 500;
-    font-family: STFangsong;
+    font-family: 黑体;
 }
 
 .indicatorAbout_header {
@@ -86,19 +104,29 @@ a:hover {
     border-left: 10px solid blue;
     border-bottom: 6px solid transparent;
 }
-.triangle-indicators {
+.triangle-dimensions {
     float:left;
     width: 0;
     height: 0;
     border-top: 4px solid transparent;
     border-left: 7px solid blue;
     border-bottom: 4px solid transparent;
+    
 }
-
-#triangle-down {
+.triangle-indicators{
+	float:left;
     width: 0;
     height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid red;
+    border-top: 3px solid transparent;
+    border-left: 5px solid #0080c0;
+    border-bottom: 3px solid transparent;
+    vertical-align:top;
+}
+.triangle-down {
+	float:left;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid blue;
 }

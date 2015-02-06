@@ -1,8 +1,8 @@
 /**2015 2015年1月20日 上午9:19:48
  * This is about <code>ClassName</code>.
- * {@link com.yourCompany.aPackage.Interface}
  * @author Andy
- * @deprecated use <code>OtherClass</code>
+ * 提供查询的方法 
+ * 
  */
 package foodSecurity;
 
@@ -36,7 +36,9 @@ public class QueryRdf {
 	public String myQueryString(String indicator, String country,
 			String timespan) {
 		queryString = "select ?indicator ?value where {"
-				+ "?time1 <http://lod.isi.edu/ontologies/indicator.owl/has_time> '"+timespan+"' ."
+				+ "optional {?time1 <http://lod.isi.edu/ontologies/indicator.owl/has_time> '"+timespan+"' .}"
+				+ "optional {?time1 <http://lod.isi.edu/ontologies/indicator.owl/has_time> '"+timespan.substring(0, 3)+"' .}"
+				//+ "?time1 <http://lod.isi.edu/ontologies/indicator.owl/has_time> '"+timespan+"' ."
 				+ "?indicatorData <http://lod.isi.edu/ontologies/indicator.owl/has_value> ?value ."
 				+ "?indicatorData <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> ?time1 ."
 				+ "?place1 <http://www.cidoc-crm.org/cidoc-crm/P3_has_note> '"+country+"'."
@@ -51,6 +53,7 @@ public Model myModel(String filepathString) {
 	model.read(filepathString);
 	return model;
 }
+//返回查询的值
 	public ArrayList<String> querysingle(String queryString,Model model) {
 		Query query = QueryFactory.create(queryString);
 		QueryExecution qe = QueryExecutionFactory.create(query, model);
@@ -60,8 +63,9 @@ public Model myModel(String filepathString) {
 			{
 				QuerySolution qs1 = rs.next(); // get the next resultset
 				myArrayList.add(qs1.get("value").toString());
+				//System.out.print(qs1.get("value").toString()+" \n");
 			} else {
-				// myArrayList.add("0");
+				myArrayList.add("0");
 			}
 		} catch (Exception ex) {
 			// out.println(ex.toString());
@@ -69,6 +73,7 @@ public Model myModel(String filepathString) {
 		} finally {
 			qe.close();
 		}
+		
 		return myArrayList;
 	}
 

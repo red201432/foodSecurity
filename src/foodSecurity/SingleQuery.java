@@ -60,7 +60,8 @@ public class SingleQuery extends ActionSupport {
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}  
+		reArrayList.clear();
 		return singleResult;
 	}
 	
@@ -91,6 +92,7 @@ public class SingleQuery extends ActionSupport {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		reArrayList.clear();
 		return inputstream;
 	}
 	

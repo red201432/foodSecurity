@@ -59,7 +59,10 @@ public class RelatedQuery extends ActionSupport {
 					String filepath1="D:/ijava/SSHtest/WebContent/data/china20150106.ttl";
 					Model model=ModelFactory.createDefaultModel();
 				     model.read(filepath1);
-					String queryString="select ?indicatorName ?value where { ?timespan <http://lod.isi.edu/ontologies/indicator.owl/has_time> '"+rq.timespanString+"' ."
+					String queryString="select ?indicatorName ?value where { "
+							//+ "optional {timespan <http://lod.isi.edu/ontologies/indicator.owl/has_time> '"+timespanStart+"' .}"
+							//+ "optional {?timespan <http://lod.isi.edu/ontologies/indicator.owl/has_time> '"+rq.timespanString+"' .}"
+							+ "?timespan <http://lod.isi.edu/ontologies/indicator.owl/has_time> '"+rq.timespanString+"' ."
 							+ "?indicatorData <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> ?timespan ."
 							+ "?indicatorData <http://lod.isi.edu/ontologies/indicator.owl/has_value> ?value ."
 							+ "?indicator <http://www.cidoc-crm.org/cidoc-crm/P102_has_title> ?indicatorName ."
