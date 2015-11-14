@@ -12,11 +12,9 @@ import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.http.HttpRequest;
+//import org.apache.http.HttpRequest;
 import org.apache.struts2.ServletActionContext;
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
-
-import com.hp.hpl.jena.query.Query;
+import org.apache.jena.query.Query;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class TotalCompare extends ActionSupport {
@@ -25,10 +23,7 @@ public class TotalCompare extends ActionSupport {
 	 */
 	private static final long serialVersionUID = 1L;
 	private String countryName;
-	private String indicatorName;
 	private String time;
-	private Query query;
-	private InputStream result;
 	String[] availability = {
 			"Average Dietary Energy Supply Adequacy",
 			"Average Value of Food Production",
