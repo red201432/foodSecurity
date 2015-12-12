@@ -47,7 +47,7 @@ p{
 	font-size: 24px;
 	font-family: 黑体;
 	height: 200px;
-	background-image: url("../images/food-header.jpg");
+	background-image: url("../images/food-header.jpg") 1000 600;
 	background-color: #1B4F93;
 	width: 1000px;
 	

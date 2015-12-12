@@ -17,6 +17,7 @@ import org.apache.struts2.ServletActionContext;
 import org.apache.jena.query.Query;
 import com.opensymphony.xwork2.ActionSupport;
 
+@SuppressWarnings("unused")
 public class TotalCompare extends ActionSupport {
 	/**
 	 * 
