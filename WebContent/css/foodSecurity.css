@@ -1,10 +1,11 @@
-﻿body {
+﻿*{margin:0;padding:0}
+body {
 	background-color: #ECECEC;
 	margin: 0;
 	padding: 0;
 }
 p{
-	font-color:whilt;
+	font-color:white;
 	word-spacing:5px;
 	line-height:150%;
 	text-indent:2em;
@@ -47,7 +48,8 @@ p{
 	font-size: 24px;
 	font-family: 黑体;
 	height: 200px;
-	background-image: url("../images/food-header.jpg") 1000 600;
+	background-image: url("../images/food-header.jpg");
+	background-size:1000;
 	background-color: #1B4F93;
 	width: 1000px;
 	
