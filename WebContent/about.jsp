@@ -72,7 +72,7 @@
 					<option value="2010">2010</option>
 					<option value="2011">2011</option>
 				</select> </div>
-				<div class="form-group">
+				<div class="form-groupd">
 				结束时间:<select name="timespanend" class="form-control">
 					<option value="1995">1995</option>
 					<option value="1996">1996</option>
