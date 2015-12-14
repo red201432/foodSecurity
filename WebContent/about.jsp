@@ -19,7 +19,8 @@
 <script type="text/javascript" src="js/indicatorNameTransform.js"></script>
 <script type="text/javascript" src="js/indicatorquery-single.js"></script>
 </head>
-<body class="container">
+<body class="container" style="background-color:#ECECEC;">
+<div class="col-lg-10 col-md-10 col-xs-12 col-md-offset-1 col-lg-offset-1" style="padding:25px;background-color:white">
 <header class="row">
 	<div class="col-lg-12 col-md-12 col-xs-12 header" style="background-color:blue;"><h1>基于本体的粮食安全信息查询系统</h1></div>
 	<nav class="nav">
@@ -151,5 +152,6 @@
 				</ul>
 				</div>
 </footer>
+</div>
 </body>
 </html>
