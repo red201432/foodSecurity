@@ -9,6 +9,7 @@
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="bootstrap-3.3.5/js/bootstrap.js"></script>
 <link href="bootstrap-3.3.5/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="bootstrap-3.3.5/css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
 <link href="css/food.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/highcharts.js"></script>
 <script type="text/javascript" src="js/multiquery.js"></script>
@@ -18,13 +19,60 @@
 <script type="text/javascript" src="js/multiselectSrc/jquery.multiselect.js"></script>
 <script type="text/javascript" src="js/indicatorNameTransform.js"></script>
 <script type="text/javascript" src="js/indicatorquery-single.js"></script>
+<script type="text/javascript">
+!function(e){e.fn.lbyl=function(n){{
+	var t=e.extend({
+			content:"",
+			speed:10,
+			type:"fade",
+			fadeSpeed:500,
+			finished:function(){}
+					},
+			n),
+
+		d=e(this),
+		s=[],
+		i=t.content;
+		e(this).length}d.empty(),
+		d.attr("data-time",i.length*t.speed);
+		for(var p=0;p<i.length;p++)
+			s.push(i[p]);
+		e.each(s,function(e,n){
+			d.append('<span style="display: none;">'+n+"</span>"),
+			setTimeout(function(){
+				"show"==t.type?d.find("span:eq("+e+")").show():
+					"fade"==t.type&&d.find("span:eq("+e+")").fadeIn(t.fadeSpeed)},
+				e*t.speed)}
+		),
+				setTimeout(function(){t.finished()},i.length*t.speed)}
+		}(jQuery);
+		
+	function show(){$(document).ready(function($){
+		$("#scrollText").lbyl({
+			content:$("#scrollText").text(),
+			speed:100,
+			type:'fade'			
+		});
+	})
+	}
+	setInterval(show,5000);
+</script>
 </head>
-<body class="container" style="background-color:#ECECEC;">
-<div class="col-lg-10 col-md-10 col-xs-12 col-md-offset-1 col-lg-offset-1" style="padding:25px;background-color:white">
+<body class="container-fluid" style="background-color:#ECECEC;">
+<div class="col-lg-10 col-md-10 col-xs-12 col-md-offset-1 col-lg-offset-1" style="padding:10px 25px;background-color:white">
 <header class="row">
-	<div class="col-lg-12 col-md-12 col-xs-12 header" style="background-color:blue;"><h1>基于本体的粮食安全信息查询系统</h1></div>
-	<nav class="nav">
-		<ul class="col-lg-12 col-md-12 col-xs-12">
+	<div class="col-lg-12 col-md-12 col-xs-12 header" style="background-color:blue;">
+		<h1>基于本体的粮食安全信息查询系统</h1>
+		<div id="scrollText" class="col-md-offset-9">Base on Semantic Web</div>
+	</div>
+	 <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+        <span class="sr-only">菜单</span>
+       <span>菜单</span>
+      </button>
+    </div>
+	<nav id="bs-navbar" class="collapse navbar-collapse">
+		<ul class="col-lg-12 col-md-12 col-xs-12 navbar-nav">
 			<li><a href="index.html">首页</a></li>
 			<li><a href="indicatorsingleQuery.jsp">数据查询</a></li>
 			<li><a href="indicatorQuery.jsp">数据对比</a></li>
@@ -36,7 +84,7 @@
 </header>
 <article class="row">
 	<aside class="col-lg-3 col-md-3 col-xs-12">
-		<form id="form1" action="" class="form-horizontal">
+		<form id="form1" style="padding:10px;" action="" class="form-horizontal">
 		<div class="form-group">
 			选择指标：<select id="select_indicators" name="indicatorName" class="form-control">
 				</select>
@@ -72,8 +120,9 @@
 					<option value="2009">2009</option>
 					<option value="2010">2010</option>
 					<option value="2011">2011</option>
-				</select> </div>
-				<div class="form-groupd">
+				</select>
+				</div>
+				<div class="form-group">
 				结束时间:<select name="timespanend" class="form-control">
 					<option value="1995">1995</option>
 					<option value="1996">1996</option>
@@ -94,7 +143,8 @@
 					<option value="2011">2011</option>
 					<option value="2012">2012</option>
 					<option value="2013">2013</option>
-				</select></div>
+				</select>
+				</div>
 				<div class="form-group">
 				<button class="btn btn-primary btn-block active" type="button" onclick="senddata()">查询</button>
 				</div>

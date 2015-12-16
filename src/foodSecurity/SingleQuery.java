@@ -45,7 +45,7 @@ public class SingleQuery extends ActionSupport {
 				.parseInt(timespanEnd) - 2; i++) {
 			int num = i + 2;
 			timeString = i + "-" + num;
-		filePath="http://localhost:8080/foodSecurity/data/timespan/"+indicatorName.replace(" ", "%20")+".ttl";
+		filePath="http://localhost:8088/foodSecurity/data/timespan/"+indicatorName.replace(" ", "%20")+".ttl";
 		queryString=queryRdf.myQueryString(indicatorName, countryName, timeString);
 		model=queryRdf.myModel(filePath);
 		myArrayList=queryRdf.querysingle(queryString,model);
@@ -74,7 +74,7 @@ public class SingleQuery extends ActionSupport {
 				.parseInt(timespanEnd) - 2; i++) {
 			int num = i + 2;
 			timeString = i + "-" + num;
-		filePath="http://localhost:8080/foodSecurity/data/timespan/"+indicatorName.replace(" ", "%20")+".ttl";
+		filePath="http://localhost:8088/foodSecurity/data/timespan/"+indicatorName.replace(" ", "%20")+".ttl";
 		queryString=queryRdf.myQueryString(indicatorName, countriesName[j], timeString);
 		model=queryRdf.myModel(filePath);
 		myArrayList=queryRdf.querysingle(queryString,model);

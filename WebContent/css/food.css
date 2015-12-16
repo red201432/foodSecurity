@@ -12,32 +12,48 @@
 	font-family: 黑体;
 	height: 200px;
 	background-image: url("../images/food-header.jpg");
-	background-size:cover;
-	background-color: #1B4F93;
+	background-size:100% 100%;
+	background-color: #205AA7;
 }
 header h1{
 	position:relative;
 	display:block;
 	margin-top:5%;
+	color:black;
 }
 
  ul{
-	background-color:blue;
+	background-color:#205AA7;
 	list-style:none;
 }
 
+
 header ul li{
-	
 	font-family:黑体;
 	font-weight:bold;
 	padding:5px;
 	font-size:18px;
 	float:left;
 	margin-left:20px;
+	color:white;
+}
+ul li a{
+	color:white;
 }
 
+ul li:hover{
+	color:#000;
+	background-color:white;
+}
+header ul li:visited{
+	color:#000;
+	background-color:white;
+}
+
+
 footer{
-	background-color:blue;
+	background-color:#205AA7;
+	padding:20px;
 }
 footer ul li {
 	
@@ -47,3 +63,14 @@ article aside{
 }
 
 /* style for ID*/
+
+#bs-navbar{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+#scrollText{
+	position:relative;
+	top:-170px;
+	left:0px;
+}
