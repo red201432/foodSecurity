@@ -105,6 +105,7 @@ $(document).ready(// 获取相关指标
                     "application/x-www-form-urlencoded");
 	        xmlHttpObj.send();
 	    }
+	   
 	    function gettimespan() {
 	        // var loadingDiv = document.getElementById("loading");
 	        // loadingDiv.style.display = "";

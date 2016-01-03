@@ -84,7 +84,7 @@
 </header>
 <article class="row">
 	<aside class="col-lg-3 col-md-3 col-xs-12">
-		<form id="form1" style="padding:10px;" action="" class="form-horizontal">
+		<form id="form1" action="" class="form-horizontal">
 		<div class="form-group">
 			选择指标：<select id="select_indicators" name="indicatorName" class="form-control">
 				</select>
